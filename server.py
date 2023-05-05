@@ -43,7 +43,7 @@ def handle_message_events(body, logger):
             model=openai_engine,
             max_tokens=openai_max_tokens,
             stop=None,
-            temperature=0.7,
+            temperature=0.6,
             messages=[
                 {"role": "user", "content": f"{prompt}"},
             ]
